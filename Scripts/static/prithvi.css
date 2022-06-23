@@ -1,0 +1,156 @@
+
+* {
+  box-sizing: border-box;
+}
+html{
+
+height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* font-size: 25px; */
+  font-family: 'Nunito', sans-serif;
+
+}
+.form-label{
+  color:#fff;
+  font-size: 17px;
+}
+.check{
+  font-size: 17px;
+}
+.aa{
+  color: #fff;
+  font-size: 17px;
+  text-align: center;
+}
+.link-info{
+  font-weight: lighter;
+
+}
+.cc{
+  background-color: rgb(0,0,0,0.2);
+  color: #fff;
+  border: none;
+  padding: 8px;
+  outline: none;
+  border-radius: 6px;
+
+}
+
+
+.blog{
+height: 100%;
+padding: 10% 0;
+}
+#but{
+  position: absolute;
+  right:7%;
+}
+
+.login
+{
+  margin: 0 auto;
+}
+
+.side{
+  background-color: black;
+  padding: 0;
+    border-radius: 16px;
+}
+.sider{
+
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #009DAE;
+  color: white;
+  text-align: center;
+  font-size: 17px;
+} */
+.video-container video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+    filter: blur(5px);
+  z-index: 0;
+}
+
+.video-container .caption {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  margin: 10%;
+  padding: 10px;
+  height: 10px;
+}
+.lb{
+  margin-bottom: 1px;
+}
+
+.row{
+  padding-top: 50px;
+  padding-right: 40px;
+  padding-left: 40px;
+  border-radius: 16px;
+  padding-top: 50px;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+@media only screen and (max-width: 993px)
+{
+   .side
+   {
+    display: none;
+  }
+  .row{
+    padding:0;
+  }
+
+}
+/* @media only screen and (max-width: 600px)  {
+  .gg{
+    background: none;
+  }
+
+} */
+
+.butt{
+  color: #fff;
+  background-color: #000000;
+  border-color: #000000;
+}
+
+.butt:hover{
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+}
+
+.gg{
+  background-color: rgb(0,0,0,0);
+  border-radius: 16px 0px 0px 16px;
+}
+.check{
+  background-color: black;
+}
+.check:checked{
+  background-color: black;
+}

@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+nav{
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  padding-top: 18px;
+  padding-bottom: 10px;
+  font-family: Nunito;
+/*
+  background: #242526; */
+}
+nav .wrapper{
+  position: relative;
+  max-width: 1474px;
+  height: 70px;
+  line-height: 70px;
+  margin-left: 0px;
+  padding-left: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper .logo a{
+  font-family: ams;
+  color: #f2f2f2;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;
+  padding-top: 30px;
+  padding-left: 15px;
+}
+.wrapper .nav-links{
+  display: inline-flex;
+  padding-top: 16px;
+  font-size: 18px;
+}
+.nav-links li{
+  list-style: none;
+}
+.nav-links li a{
+  color: #f2f2f2;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 9px 25px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+.nav-links li a:hover{
+  color: #C8C6C6;
+
+}
+.nav-links .mobile-item{
+  display: none;
+}
+
+.wrapper .btn{
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.wrapper .btn.close-btn{
+  color: white;
+  position: absolute;
+  right: 30px;
+  top: 10px;
+}
+@media screen and (max-width: 970px) {
+
+  .title{
+    font-size: 40px;
+  }
+  .sub-title{
+    font-size: 20px;
+  }
+  .nav-links #butt{
+    display: none;
+  }
+  nav .wrapper{
+    padding-left: 5px;
+  }
+  .wrapper .btn{
+    display: block;
+  }
+  .wrapper .nav-links{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 350px;
+    top: 0;
+    left: -100%;
+    background: #242526;
+    display: block;
+    padding: 50px 50px;
+    line-height: 50px;
+    overflow-y: auto;
+    box-shadow: 0px 15px 15px rgba(0,0,0,0.18);
+    transition: all 0.3s ease;
+  }
+  /* custom scroll bar */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #242526;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #3A3B3C;
+  }
+  #menu-btn:checked ~ .nav-links{
+    left: 0%;
+  }
+  #menu-btn:checked ~ .btn.menu-btn{
+    display: none;
+  }
+  #close-btn:checked ~ .btn.menu-btn{
+    display: block;
+  }
+  .nav-links li{
+
+  }
+  .nav-links li a{
+    display: block;
+    font-size: 20px;
+  }
+  .content .row header{
+    font-size: 19px;
+  }
+}
+nav input{
+  display: none;
+}
+.navbar{
+z-index:1;
+}
+
+p{
+font-family: Nunito;
+}
+/* logo font /
+@font-face {
+font-family: ams;
+  src: url(fonts/Amsterdam3.ttf);
+}
+
+/ logo /
+.navbar-brand{
+  font-family: ams;
+  padding-top: 30px;
+  padding-left: 45px;
+}
+
+/ nav-items  /
+.nav-item1{
+padding-right: 50px;
+padding-top: 16px;
+font-size: 18px;
+}
+
+.nav-item2{
+padding-right: 15px;
+padding-top: 5px;
+}
+*/
+/* .btn {
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #83859c;
+  font-size: 18px;
+  background: white;
+  padding: 10px 20px 10px 20px;
+  border: solid white 3px;
+  text-decoration: none;
+  height: 52px;
+  width: 159px;
+}
+
+.btn:hover {
+  text-decoration: none;
+  color: #83859c;
+  border: solid #E7E8ED 3px;
+}
+*/
+
+.btn2 {
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 18px;
+  background: #4e60ff;
+  padding: 10px 20px 10px 20px;
+  border: solid #4e60ff 3px;
+  text-decoration: none;
+  height: 52px;
+  width: 159px;
+}
+
+.btn2:hover {
+  text-decoration: none;
+  border: solid #3848d8 3px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.content {
+  margin-top: 20%;
+  position: fixed;
+  color: #f1f1f1;
+  width: 100%;
+  padding: 5%;
+}
+@font-face {
+font-family: ams;
+  src: url(fonts/Amsterdam3.ttf);
+}
+
+
+.nav-links #butt{
+  border: 2px solid white;
+  border-radius: 25px;
+  color: white;
+}
+.nav-links #butt:hover{
+  background-color: #C8C6C6;
+}
+h1{
+font-family: 'Sarabun', sans-serif;
+font-size: 60px;
+}
+
+.dam{
+font-family: 'Sarabun', sans-serif;
+font-size: 25px;
+font-weight: bolder;
+}

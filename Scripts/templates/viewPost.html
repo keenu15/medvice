@@ -1,0 +1,92 @@
+{% extends "navbarPost.html" %}
+
+{% block title %}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<title>View Post</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Nunito:wght@200&display=swap" rel="stylesheet">
+  <link rel="icon" href="static/favicon.ico" type="image/gif">
+<link rel="stylesheet" href="/static/RakeshStyle1.css">
+{% endblock %}
+
+
+
+{% block content %}
+<div id="videodiv">
+<video autoplay muted loop id="myVideo">
+  <source id="src" src="/static/videos/video5.mp4" type="video/mp4">
+</video>
+</div>
+
+<div class="container blogsection">
+
+
+  <div class="row">
+
+
+
+<div class="col" style="margin-top:3%;margin-bottom:3%;">
+  <div class="blog" style="max-width: 80rem ; min-height: 200px;">
+
+
+    <div class="blog-header"><strong><h1>By {{Blog.name}}</h1></strong></div>
+    <div class="blog-body" >
+
+      <h1 class="">What I had been through?</h1>
+      <p class="">{{Blog.what_i_have_been_through}}</p>
+      <hr>
+
+      <h1 class="">What I did to overcome?</h1>
+      <p class="">{{Blog.what_i_did_to_overcome}}</p>
+
+  <hr>
+      <h1 class="">Tips</h1>
+      <p class="">{{Blog.tips}}</p>
+
+  <hr>
+        <p class="">Posted {{Blog.time}}</p>
+<div class="" style="min-height: 30px">
+<button type="button" class="btn btn-dark Contact-me" id="showC" onclick="showContactme()">Contact Me</button>
+</div>
+
+<div class="show-contact" id="show-contact">
+  <form class="send" action="/sendmail/{{Blog.email}}-{{current_user.email}}" method="post">
+    <div class="form-group">
+      <h2>Subject</h2>
+      <input type="text" class="contact-input" placeholder="Subject(Mandatory)" name="subject" required>
+    </div>
+    <div class="form-group">
+       <h2>Message</h2>
+       <textarea class="contact-input"  rows="3" placeholder="Enter the Message" name="body" required></textarea>
+     </div>
+     <small>Note: This Message is sent using your Register Email to the Adviser Email</small>
+     <div class="" style="min-height: 30px">
+     <button type="submit" class="btn btn-dark Contact-me">Submit</button>
+     </div>
+  </form>
+</div>
+
+
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+<script src="/static/rakesh.js" charset="utf-8"></script>
+
+{% endblock %}
